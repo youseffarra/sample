@@ -1,0 +1,120 @@
+<html>
+
+	<head>
+		<title>STS Telecom | Contact us</title>
+		<link href="css/css.css" rel="stylesheet" />
+		
+		<script type="text/javascript">
+			function humanCheck(){
+				var num1,num2;
+				var answerS,answerInt;
+				var generatedValuesSum;
+				var nameCheck = document.getElementById("name").value.length;
+				var emailCheck = document.getElementById("email").value.length;
+				var titleCheck = document.getElementById("title").value.length;
+				var messageCheck = document.getElementById("message").value.length;
+				num1 = Math.floor(Math.random() * 50) + 1;
+				num2 = Math.floor(Math.random() * 50) + 1;
+				
+				generatedValuesSum = num1 + num2 ;
+				if(nameCheck != 0 && emailCheck != 0 && titleCheck != 0 && messageCheck != 0){
+				
+				answerS = window.prompt("What is "+num1+"+"+num2+"=? Answer?");
+				
+				answerInt = parseInt(answerS);
+				
+				if(answerInt == generatedValuesSum){
+					window.alert("Correct answer!");
+				}else{
+					window.alert("Wrong answer :( Try again");
+				}
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var title = document.getElementById("title").value;
+				var message = document.getElementById("message").value;
+				var sub = message.substr(0, 100)+"....";
+				window.alert("Your entered info:\n"+"Name: "+name+"\nEmail: "+email+"\nTitle: "+title+"\nMessage: "+sub);
+			}else{
+				window.alert("All fields are required please fill them and try again.");
+			}
+			
+			
+			}
+			
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="title center">
+			
+			<img src="images/logo.png" width="350" alt="LOGO"/>
+		
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</div><!-- Navbar div end -->
+			
+		</div><!-- Title div end -->
+		
+		<div class="main">
+		
+			<center>
+			<h2 style="margin: 0 auto;">Contact Form</h2>
+				
+			
+				<form class="contactF" action="" method="post">
+				
+					<input class="mt-5" type="text" name="name" placeholder="Enter your name" id="name" maxlength="100" autofocus required>
+					<input type="email" name="email" placeholder="Enter your email" id="email" maxlength="300" required>
+					<br>
+					<input class="mt-5" style="width: 40%;" type="text" name="title" id="title" placeholder="Enter message title" maxlength="200" required>
+					<br>
+					<textarea class="mt-5" name="message" placeholder="Enter your message" id="message" style="width: 40%;" maxlength="1000" rows="4" required></textarea>
+					<br>
+					<input class="mt-5" type="submit" name="send" onclick="humanCheck()" value="Send">
+
+				</form>
+			</center>
+			
+			
+			
+			
+			<div class="footer">
+				<div class="infoD">
+					<h3>who are we?</h3>
+					<p>Sts is a telecommunications company that provides 
+					network to more than 40 countries, providing it with 
+					high-speed internet and hosting websites with databases 
+					of up to 500 GB.</p>
+				</div>
+				
+				<div class="links">
+					<h3>Jump Links</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Offers</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+				</div>	
+				
+			</div>
+			
+			<div class="pro">
+				<h3>Programmed and designed by: Yousef Farra, Ola Harsouni, Lamees Fansa</h3>
+				<h4>All copyrights 2020-2021&copy; saved.</h4>
+			</div>
+			
+		</div><!-- main -->
+		
+		
+		
+		
+	</body>
+
+</html>

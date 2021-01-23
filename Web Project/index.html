@@ -1,0 +1,342 @@
+<html>
+
+	<head>
+		<title>STS Telecom</title>
+		<link href="css/css.css" rel="stylesheet" />
+		
+		<script>
+			// Date object vars
+			var current = new Date();
+			var day = current.getDay();
+			var date = current.getDate();
+			var year = current.getFullYear();
+			var month = current.getMonth()+1;
+			var dayWr;
+			// switch for knowing the day
+			switch (day){
+				case 0: dayWr = "Sunday"; break;
+				case 1: dayWr = "Monday"; break;
+				case 2: dayWr = "Tuesday"; break;
+				case 3: dayWr = "Wednesday"; break;
+				case 4: dayWr = "Thursday"; break;
+				case 5: dayWr = "Friday"; break;
+				case 6: dayWr = "Saturday"; break;
+				default: dayWr = "Faild to get day."; break;
+			}
+			// displaying the date to user
+			document.writeln("<p style=\"color: #fff;font-weight: 700;\">"+dayWr+" "+date+"/"+month+"/"+year+"</p>");
+			
+			function bronze(){
+				var numB;
+				// number input
+				numB = window.prompt("You are buying bronze package. Enter your number to continue:");
+				// check first and second number 
+				var firstNum = numB.charAt(0);
+				var secondNum = numB.charAt(1);
+				
+				if(firstNum != '0' && secondNum != '9'){
+					window.alert("Number must start with 09. Click buy again.");
+				}else if(numB.length != 10){
+					// Entered number must be 10 digits
+					window.alert("Invalid number (number must be 10 digits). Click buy again.");
+				}else if(!/^[0-9.,]+$/.test(numB)){
+					// entered value must be numbers only
+					window.alert("Enter numbers only. Click buy again.");
+				}else{
+					window.alert("You have bought silver package successfully.");	
+				}
+						
+			}
+			function silver(){
+				var numB;
+				numB = window.prompt("You are buying silver package. Enter your number to continue:");
+				
+				var firstNum = numB.charAt(0);
+				var secondNum = numB.charAt(1);
+				
+				if(firstNum != '0' && secondNum != '9'){
+					window.alert("Number must start with 09. Click buy again.");
+				}else if(numB.length != 10){
+					window.alert("Invalid number (number must be 10 digits). Click buy again.");
+				}else if(!/^[0-9.,]+$/.test(numB)){
+					window.alert("Enter numbers only. Click buy again.");
+				}else{
+					window.alert("You have bought silver package successfully.");	
+				}
+				
+			}
+			function gold(){
+				var numB;
+				numB = window.prompt("You are buying gold package. Enter your number to continue:");
+				
+				var firstNum = numB.charAt(0);
+				var secondNum = numB.charAt(1);
+				
+				if(firstNum != '0' && secondNum != '9'){
+					window.alert("Number must start with 09. Click buy again.");
+				}else if(numB.length != 10){
+					window.alert("Invalid number (number must be 10 digits). Click buy again.");
+				}else if(!/^[0-9.,]+$/.test(numB)){
+					window.alert("Enter numbers only. Click buy again.");
+				}else{
+					window.alert("You have bought gold package successfully.");	
+				}
+			
+			}
+			
+			function confirmEmail(){
+				var email;
+				// get entered email value
+				email = document.getElementById("email").value;
+				// check if the input is not empty
+				if(document.getElementById("email").value.length != 0){
+				// tell the user to confirm his/her email
+				if (confirm("Confirm your email? " + email) == true) {
+					window.alert(email+" .You have successfully joined our newsletter");
+				} else {
+					window.alert("Enter your email again.");
+				}
+				}else{
+					window.alert("Please enter your email.");
+				}
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="title center">
+			
+			<img src="images/logo.png" width="350" alt="LOGO"/>
+		
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</div><!-- Navbar div end -->
+			
+		</div><!-- Title div end -->
+		
+		<div class="main">
+		
+			<div class="info">
+			
+				<div class="image-right right p-3">
+					<img class="mt-5 rounded" src="images/1.jpg" width="600"/>
+				</div>
+				<div class="desc p-3 center">
+				<br />
+				<br />
+					<h3>Our services are spread over 40 countries 
+					and are covered by a 4G network to enable 
+					you to obtain high-speed internet 
+					and high-definition communications.</h3>
+				</div><!-- info 1 -->
+				 
+				<div class="image-left left p-3">
+					<img class="mt-5 rounded" src="images/1.svg" width="600"/>
+				</div>
+				
+				<div class="desc p-3 center" style="float: right;">
+				<br />
+					<h3>You can send and receive voice and video calls 
+					and messages over a range of more than 100 kilometers, 
+					and you can surf the Internet and social 
+					networking applications at high speed.</h3>
+				</div><!-- info 2 -->
+				
+			</div><!-- info -->
+		
+			<center>
+				<div class="offers">
+					<table class="offersT" width="80%">
+					
+						<thead>
+							<tr>
+								<th style="background: #fff;"></th>
+								<th style="background: #fff;"><img src="images/bronze.png" width="50"/><br /></th>
+								<th style="background: #fff;"><img src="images/silver.png" width="50"/><br /></th>
+								<th style="background: #fff;"><img src="images/gold.png" width="50"/><br /></th>
+							</tr>
+							<tr>
+								<th>Features</th>
+								<th>Bronze Package</th>
+								<th>Silver Package</th>
+								<th>Gold Package</th>
+							</tr>
+						</thead>
+					
+						<tbody>
+							<tr>
+								<th>Calls</th>
+								<td class="bronze">200 minutes</td>
+								<td class="silver">400 minutes</td>
+								<td class="gold">600 minutes</td>
+							</tr>
+							<tr>
+								<th>Messages</th>
+								<td class="bronze">300 messages</td>
+								<td class="silver">600 messages</td>
+								<td class="gold">800 messages</td>
+							</tr>
+							<tr>
+								<th>Internet</th>
+								<td class="bronze">5 GB</td>
+								<td class="silver">15 GB</td>
+								<td class="gold">30 GB</td>
+							</tr>
+							<tr>
+								<th>3G</th>
+								<td class="bronze">YES</td>
+								<td class="silver">YES</td>
+								<td class="gold">YES</td>
+							</tr>
+							<tr>
+								<th>4G</th>
+								<td class="bronze"><del>NO</del></td>
+								<td class="silver">YES</td>
+								<td class="gold">YES</td>
+							</tr>
+							<tr>
+								<th>5G</th>
+								<td class="bronze"><del>NO</del></td>
+								<td class="silver"><del>NO</del></td>
+								<td class="gold">YES</td>
+							</tr>
+							<tr>
+								<th>Video calls</th>
+								<td class="bronze"><del>NO</del></td>
+								<td class="silver"><del>NO</del></td>
+								<td class="gold">YES</td>
+							</tr>
+							<tr>
+								<th>Speed</th>
+								<td class="bronze">Less than 256 KBs</td>
+								<td class="silver">512 KBs</td>
+								<td class="gold">Up to 20 MBs</td>
+							</tr>
+							<tr>
+								<th>Price</th>
+								<td class="bronze">1999 S.P</td>
+								<td class="silver">2999 S.P</td>
+								<td class="gold">3999 S.P <span class="deal"><i>BEST DEAL!</i></span></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th style="background: #fff;cursor: default;"></th>
+								<th><a class="tableLink" onclick="bronze()" href="#">Buy now</a></th>
+								<th><a class="tableLink" onclick="silver()"   href="#">Buy now</a></th>
+								<th><a class="tableLink" onclick="gold()"  href="#">Buy now</a></th>
+							</tr>
+						</tfoot>
+					</table>
+				</div><!-- table div -->
+				
+				<div class="form">
+					<form action="" method="POST">
+						<label>Subscribe to our newsletter!&nbsp;&nbsp;&nbsp;
+							<input type="email" id="email" name="email" placeholder="Enter your email" >
+							<input type="submit" onclick="confirmEmail()" name="join" value="Subscribe" />
+						</label>
+					</form>
+				</div><!-- form div -->
+				
+				<hr>
+				
+				<div class="branches" style="margin-top: 45px;">
+					<img src="images/branch.png" width="175"/>
+					<br />
+					<div class="list1">
+						<ul style="font-size: 24px;">
+							<li><b>Aleppo</b>
+								<ol>
+									<li>Azizia</li>
+									<li>Mocambo
+										<ol type="A">
+											<li>New Mall <i style="color: red;">(SOON)</i></li>
+											<li>Alitihad street</li>
+										</ol>
+									</li>
+									<li>Jamiliah <i style="color: red;">(SOON)</i></li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul style="font-size: 24px;">
+							<li><b>Damascus</b>
+								<ol>
+									<li>Mazzeh</li>
+									<li>Al Shaalan</li>
+									<li><del>Bab Toma</del> <i style="color: red;">CLOSED</i></li>
+									<li>Abo Romanah</li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul style="font-size: 24px;">
+							<li><b>Latakia</b>
+								<ol>
+									<li>Al Zeraa</li>
+									<li>Abo bakr street</li>
+									<li>Example street</li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul style="font-size: 24px;">
+							<li><b>Hamah <i style="color: red;">(SOON)</i></b></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<img style="margin-bottom: 40px;margin-top: 10px;" src="images/24.png" width="350"/>
+				
+				<h2>Support E-mail<br /><a href="mailto: support@sts.com">support@sts.com</a></h2>
+				
+				
+			</center>
+			
+			
+			
+			
+			<div class="footer">
+				<div class="infoD">
+					<h3>who are we?</h3>
+					<p>Sts is a telecommunications company that provides 
+					network to more than 40 countries, providing it with 
+					high-speed internet and hosting websites with databases 
+					of up to 500 GB.</p>
+				</div>
+				
+				<div class="links">
+					<h3>Jump Links</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Offers</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+				</div>	
+				
+			</div>
+			
+			<div class="pro">
+				<h3>Programmed and designed by: Yousef Farra, Ola Harsouni, Lamees Fansa</h3>
+				<h4>All copyrights 2020-2021&copy; saved.</h4>
+			</div>
+			
+		</div><!-- main -->
+		
+		
+		
+		
+	</body>
+
+</html>

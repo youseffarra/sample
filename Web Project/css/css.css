@@ -1,0 +1,269 @@
+*{
+	font-family: 'Cairo', sans-serif;
+}
+body{
+	background: #18dcff;
+	width: 1200px;
+	padding: 10px;
+	margin: 0 auto;
+	
+}
+.center{
+	text-align: center!important;
+}
+.right{
+	text-align: right!important;
+}
+.left{
+	text-align: left!important;
+}
+.title{
+	
+	border-radius: 5px;
+}
+.title h1{
+	color: #4b4b4b;
+}
+.navbar {
+    background: #4b4b4b;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    padding: 10px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li a:hover {
+    color: #ddd;
+}
+.main{
+	background: #fff;
+	border-radius: 5px;
+}
+.mt-5{
+	margin-top: 10px!important;
+}
+.p-3{
+	padding: 15px;
+}
+.image-right {
+    float: right;
+	width: 50%;
+}
+.image-left {
+    float: left;
+	width: 50%;
+}
+.desc{
+	width: 45%;
+
+}
+.rounded{
+	border-radius: 10px;
+}
+.info{
+	height: 650px;
+}
+
+.offersT {
+    text-align: center;
+}
+.offersT td, th {
+	font-size: 20px;
+}
+.offersT td {
+    background: #18dcff;
+    color: #fff;
+    font-weight: 500;
+
+}
+.offersT th {
+    background: #17c0eb;
+    color: #fff;
+    font-weight: 500;
+}
+.tableLink{
+	text-decoration: none;
+	color: #fff;
+}
+.offersT tfoot th{
+	cursor: pointer;
+}
+.offersT tfoot th:hover{
+	background: #17c0ebc7;
+}
+.form {
+    margin-top: 35px;
+}
+.form label {
+    font-size: 24px;
+    font-weight: 500;
+    color: #7d5fff;
+}
+
+.form input[type=email] {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+    color: #4b4b4b;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.form input[type=submit] {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+	background: #4b4b4b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.footer{
+	background: #4b4b4b;
+	height: 300px;
+
+}
+.links {
+    width: 40%;
+    float: left;
+    text-align: center;
+	color: #fff;
+}
+.infoD {
+    width: 40%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+	color: #fff;
+	margin-right: 70px;
+}
+.links ul li {
+    list-style: none;
+}
+.links ul {
+    padding: 0;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.links ul li a:hover {
+    color: #ddd;
+}
+.pro {
+    text-align: center;
+    padding: 2px;
+    color: #4b4b4b;
+}
+
+/*
+.bronze{
+	background: #cd7f32!important;
+}
+.silver{
+	background: #c0c0c0!important;
+}
+.gold{
+	background: #ffc107!important;
+}
+*/
+
+.contactF input[type=text] {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 16px;
+}
+.contactF input[type=email] {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 16px;
+}
+.contactF input[type=submit] {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 16px;
+	background: #fff;
+	cursor: pointer;
+	font-weight: bold;
+}
+.contactF textarea {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 16px;
+	max-height: 50%;
+	min-height: 20%;
+	min-width: 40%;
+	max-width: 40%;
+}
+.branches {
+    height: 30rem;
+}
+.list1 {
+    width: 25%;
+    text-align: left;
+    float: left;
+}
+.deal{
+	color: red;
+    font-weight: 700;
+    background: #fff;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+
+/* arabic */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cairo/v9/SLXGc1nY6HkvalIkTpu0xg.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cairo/v9/SLXGc1nY6HkvalIvTpu0xg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cairo/v9/SLXGc1nY6HkvalIhTps.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
