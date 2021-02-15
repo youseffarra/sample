@@ -1,0 +1,35 @@
+*{
+    font-family: cairo;
+}
+body{
+    background-color: #e4e9ee;
+}
+.progress{
+    height: 25px!important;
+    border-radius: 0.70rem!important;
+}
+.fas{
+    color: #8854d0;
+}
+.text-pur{
+    color: #8854d0;
+}
+.f16{
+    font-size: 16px;
+}
+.bg-pur{
+    background-color: #a55eea;
+}
+.bg-success{
+    background-color: #20bf6b!important;
+}
+.border-pur{
+    border: 2px solid #8854d0;
+}
+.fab{
+    margin-right: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: #f8f9fa!important;
+}
